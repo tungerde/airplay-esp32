@@ -672,7 +672,7 @@ Advanced timing and metadata options under **AirPlay Receiver → AirPlay Protoc
 
 ### Cover Art / Artwork
 
-Album cover art is **disabled by default**. Most receivers have no screen (or only a small OLED), and receiving artwork images over the RTSP connection can stall the audio pipeline and cause drop-outs — especially on unbuffered AirPlay 1 / realtime streams. When disabled, the receiver removes the artwork type (`0`) from its advertised `md` txt record so senders don't transmit cover art, and ignores any artwork sent anyway. Track title, artist, album and progress metadata are always received.
+Album cover art is **disabled by default**. Most receivers have no screen (or only a small OLED), and receiving artwork images over the RTSP connection can stall the audio pipeline and cause drop-outs — especially on unbuffered AirPlay 1 / realtime streams. When disabled, the receiver removes the artwork type (`1`) from its advertised `md` txt record so senders don't transmit cover art, and ignores any artwork sent anyway. Track title, artist, album and progress metadata are always received.
 
 To enable cover art (e.g. if you have a TFT display):
 
